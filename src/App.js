@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import FruitList from "./components/FruitList";
 
 export default function App() {
   const [fruits, setFruits] = useState([
@@ -20,10 +21,8 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div> Preço total: = {reduced}</div>
-        <div>
-          <li>{maped}</li>
-        </div>
+        <div> Preço total = {reduced}</div>
+        <FruitList maped={maped} />
         <button onClick={filterRedFruits}>Mostrar frutas vermelhas</button>
       </header>
     </div>
