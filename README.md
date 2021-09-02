@@ -1,48 +1,70 @@
-# 📋 Sobre a atividade
+# Getting Started with Create React App
 
-Na atividade de hoje, iremos aprender sobre métodos de array em conjunto com o React. No React utilizamos diversos métodos de array em conjunto com o state, sempre respeitando a imutabilidade.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# ℹ️ Informações úteis
+## Available Scripts
 
-## Resultado
+In the project directory, you can run:
 
-![](https://i.imgur.com/U8zQige.gif)
+### `yarn start`
 
-## 🖐️🍝Mão na massa!
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-*   Com seu projeto React criado, importe o useState e instancie ele dessa forma:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-    const [fruits, setFruits] = useState([
-        { name: "banana", color: "yellow", price: 2 },
-        { name: "cherry", color: "red", price: 3 },
-        { name: "strawberry", color: "red", price: 4 },
-      ]);
+### `yarn test`
 
-*   Com isso, temos 3 frutas dentro do nosso array, com suas respectivas cores, preços e nomes
-*   Dentro do JSX, faça um map no state `fruits` e faça a exibição do nome de cada fruta
-*   Adicione um botão na exibição, sem função por enquanto.
-*   Agora, crie uma função `filterRedFruits` que deverá fazer um filtro no state `fruits`, onde a cor seja "red", ou seja, você deverá utilizar o método `filter` para filtrar. Não esqueça de fazer o `setFruits()` onde o parâmetro será o resultado do `filter`
-*   Adicione a função `filterRedFruits` no evento `onClick` do botão que você criou antes.
-*   Crie uma constante `totalPrice` que será a soma dos preços do state `fruits` utilize o método `reduce` para realizar essa operação.
-*   Renderize o `totalPrice` acima da lista.
-*   Agora, clicando no botão, o filtro irá acontecer e de forma reativa o React irá atualizar o preço do nosso state `fruits`!
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 💪Agora é com você
+### `yarn build`
 
-*   Separe em um componente `<FruitList />` que receberá por props o array de fruits e será responsável por fazer a renderização da lista.
-*   Estilize a aplicação.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 🔗 Links úteis
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-[Array.prototype.reduce() - JavaScript | MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-[Array.prototype.filter() - JavaScript | MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+### `yarn eject`
 
-[Array.prototype.map() - JavaScript | MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-# 💡Conhecimentos aplicados:
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-*   Componentes
-*   Props
-*   State
-*   Métodos de array
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
