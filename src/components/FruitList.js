@@ -1,9 +1,5 @@
-const FruitList = ({ maped }) => {
-  return (
-    <div>
-      <li>{maped}</li>
-    </div>
-  );
+const FruitList = ({ lista }) => {
+  return <div> {lista}</div>;
 };
 
 export default FruitList;

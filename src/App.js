@@ -11,18 +11,23 @@ export default function App() {
 
   const maped = fruits.map((element) => element.name);
   console.log(maped);
-  const reduced = fruits.reduce((acc, fruit) => acc + fruit.price, 0);
 
   const filterRedFruits = () => {
     const filtered = fruits.filter((fruit) => fruit.color === "red");
     setFruits(filtered);
   };
 
+  const reduced = fruits.reduce((acc, fruit) => acc + fruit.price, 0);
+
+  const lista = maped.map((dado, indice) => {
+    return <li key={indice}>{dado}</li>;
+  });
+
   return (
     <div className="App">
       <header className="App-header">
         <div> Preço total = {reduced}</div>
-        <FruitList maped={maped} />
+        <FruitList lista={lista}></FruitList>
         <button onClick={filterRedFruits}>Mostrar frutas vermelhas</button>
       </header>
     </div>
